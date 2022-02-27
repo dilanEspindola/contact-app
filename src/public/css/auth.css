@@ -1,0 +1,53 @@
+/* REGISTER AND LOGIN */
+.contenedor-registro {
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 30%;
+    border: 1px solid;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+form.register-form {
+    padding: 1.875rem 3.125rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form.register-form .txt-create-account {   
+    color: #fff;     
+    margin-bottom: 1.25rem;
+}
+
+form.register-form input {
+    margin-bottom: 1.25rem;
+    padding: 0.625rem;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+form.register-form input:focus {
+    border-bottom: 1px solid rgba(255, 255, 255);
+    transform: scale(0.97);
+}
+
+.btn-create-account {
+    border-style: none;
+    background: none;
+    border: 1px solid rgba(0, 255, 85, 0.651);
+    border-radius: 25px;
+    color: #fff;
+    padding: 0.625rem 1.25rem;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.btn-create-account:hover {
+    background: rgba(0, 255, 85, 0.651);
+}
+
+/* LOGIN */

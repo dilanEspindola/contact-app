@@ -1,0 +1,13 @@
+<header>
+    <ul>
+        {{#if user}}
+        <a href="/contacts">contacts</a>
+        <a href="/contacts/add">Add new Contact</a>
+        <a href="/logout">LogOut</a>
+        {{else}}
+        <a href="/">home</a>
+        <a href="/register">Register</a>
+        <a href="/login">LogIn</a>
+        {{/if}}
+    </ul>
+</header>

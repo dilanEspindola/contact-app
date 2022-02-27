@@ -1,0 +1,27 @@
+<div class="contenedor-contacto">
+    {{#each sql}}
+    <div class="contacto-card">
+        <h3 class="info-contacto">informacion del contacto</h3>
+        <div class="titulo-nombre">
+            <h3 class="nombre-contacto">Nombre </h3>
+            <p>{{contact_name}}</p>
+        </div>
+        <div class="titulo-telefono">
+            <h3 class="telefono-contacto">Telefono</h3>
+            <p>{{phone_contact}}</p>
+        </div>
+        <p class="timeago">{{timeago created_at}}</p>
+        <div class="buttons">
+            <a href="/contacts/edit/{{id}}" class="editar">Editar</a>
+            <a href="/contacts/delete/{{id}}" class="eliminar">Eliminar</a>
+        </div>
+    </div>
+    {{else}}
+    <div class="no-contacts-found">
+        <div class="card-msg">
+            <h2 class="no-contacts">There are not contacts</h2>
+            <a class="link-create-contact" href="/contacts/add">Create a contact</a>
+        </div>
+    </div>
+    {{/each}}
+</div>

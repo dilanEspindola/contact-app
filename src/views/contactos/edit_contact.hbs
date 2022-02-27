@@ -1,0 +1,9 @@
+<div class="contenedor-formulario">
+    <form action="/contacts/edit/{{edit.id}}" method="post" class="form-add">       
+        <h2 class="add-contact">Edit your contact</h2>  
+            <input type="text" name="contact_name" value="{{edit.contact_name}}" required>
+            <input type="text" name="phone_contact" value="{{edit.phone_contact}}" required>
+            <button class="btn-add" type="submit">Edit contact</button>
+        </div>
+    </form>
+</div>

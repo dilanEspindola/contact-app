@@ -1,0 +1,16 @@
+CREATE DATABASE contacto_app;
+USE contacto_app;
+CREATE TABLE usuarios(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  fullname VARCHAR(60) NOT NULL,
+  username VARCHAR(50) NOT NULL UNIQUE,
+  passwrod VARCHAR(255) NOT NULL
+);
+CREATE TABLE contactos(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  contact_name VARCHAR(50) NOT NULL,
+  phone_contact VARCHAR(100) NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  id_usuario INT,
+  CONSTRAINT fk_usuario FOREIGN KEY (id_usuario) REFERENCES usuarios
+);
